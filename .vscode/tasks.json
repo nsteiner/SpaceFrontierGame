@@ -1,0 +1,39 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "type": "cppbuild",
+        "label": "C/C++: Build SFML Project",
+        "command": "/usr/bin/clang++",  // Use clang++ compiler
+        "args": [
+          "-arch",
+          "arm64",
+          "-std=c++17",
+          "-stdlib=libc++",
+          "-I/Users/nsteiner25/Desktop/SFML/External Libraries/SFML/include",  // Include path for SFML header files
+          "-L/Users/nsteiner25/Desktop/SFML/External Libraries/SFML/lib",      // Library path for SFML library files
+          "-lsfml-graphics",
+          "-lsfml-window",
+          "-lsfml-system",
+            "-lsfml-network",
+            "-lsfml-audio",
+          "src/main.cpp",
+          "-lsqlite3",
+          //more source code files that need to be compiled together
+          "-o",
+          "${fileDirname}/${fileBasenameNoExtension}"
+        ],
+        "options": {
+          "cwd": "/Users/nsteiner25/Desktop/SFML Game 3"
+        },
+        "problemMatcher": [
+          "$gcc"
+        ],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        }
+      }
+    ]
+  }
+  

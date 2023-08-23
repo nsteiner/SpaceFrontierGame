@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "C/C++: Launch SFML Program",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "/Users/nsteiner25/Desktop/SFML Game 3/src/main",
+        "args": [],
+        "stopAtEntry": false,
+        "cwd": "/Users/nsteiner25/Desktop/SFML Game 3/",
+        "environment": [
+          {
+            "name": "DYLD_LIBRARY_PATH",
+            "value": "/Users/nsteiner25/Desktop/SFML Game 3/lib"
+          },
+          {
+            "name": "DYLD_FRAMEWORK_PATH",
+            "value": "/Library/Frameworks/extlibs"
+          }
+        ],
+        "externalConsole": false,
+        "MIMode": "lldb"
+      }
+    ]
+  }
+  
